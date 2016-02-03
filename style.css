@@ -1,0 +1,167 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#333;
+    font-size:1em;
+}
+h1, h2, h3{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+button:hover{
+    border:inset 1px #fff;
+    border-radius: 5px;
+    color:#fff;
+    background-color: #666;
+    cursor:pointer;
+}
+#album_display_title{
+    color:#fff;
+}
+.close{
+    margin-left:95%;
+}
+.close:hover{
+    cursor: pointer;
+}
+
+/* for iPhone 5 */
+@media only screen and (min-width: 320px) {
+    #nav{
+        display:block;
+        top:50;
+        margin-bottom: 20px;
+        width:100vw;
+        height:50px;
+    }
+    .icons{
+        width:40px;
+        height:auto;
+        margin:10px;
+    }
+    #nav_add{
+        float:left;
+    }
+    #nav_dropdown{
+        
+        float:right;
+    }
+    #controls{
+        display:none;
+    }
+    #video_display{
+        left:0;
+        width:100vw;
+        height:40vh;
+        text-align: center;
+    }
+    iframe{
+        width: 100%;
+        height: 85%;
+    }
+    button{
+        margin:5px 10px 5px 10px;
+        height:25px;
+        width:100px;
+        color:#333;
+        background-color:#fff;
+        border:1px outset #999;
+        border-radius: 5px;
+    }
+}
+
+/* for desktop */
+@media only screen and (min-width: 768px) {
+    #controls{
+        display:block;
+    }
+    
+    .create_button{
+        display:block;
+        width:20vw;
+        height:32px;
+        margin-right:5vw;
+        margin-left:5vw;
+    }
+    #album_display{
+        width: 100vw;
+        height:auto;
+        position: absolute;
+        left: 0;
+        padding:10px;
+        top:405px;
+        background-color: #333;
+    }
+    #video_display{
+        width: 70vw;
+        height:405px;
+        position: absolute;
+        right: 0;
+        top:0;
+        text-align: center;
+        background-color: #666;
+    }
+    #nav{
+        display:none;    
+    }
+    #controls{
+        left:0;
+        top:0;
+        width:30vw;
+        height:405px;
+        position:absolute;
+        background-color: #eee;
+    }
+    .album_div{
+        width:150px;
+        padding:0px 25px 0px 25px;
+        height:auto;
+        display:inline-block;
+        color:#fff;
+    }
+
+    input{
+        margin:10px 5% 10px 5%;
+        padding:2px;
+        width:90%;
+        height:2.25em;
+        border:1px inset #eee;
+        border-radius:5px;
+    }
+    textarea{
+        margin:10px 5% 10px 5%;
+        padding:2px;
+        width:90%;
+        border:1px inset #eee;
+        border-radius:5px;
+    }
+    
+    .insert_video_div{
+        padding:10px;
+        width:300px; 
+        height:200px; 
+        position:absolute; 
+        left:0; 
+        right:0; 
+        top:200; 
+        buttom:0; 
+        margin:auto; 
+        background-color:#fff;
+    }
+    .insert_video_button{
+        width:50%;
+        margin-left:25%;
+        margin-right:25%;
+    }
+    .edit_button{
+        width:80%;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    .edit_div_title{
+        margin-left:15px;
+    }
+    .album_img{
+        width:150px;
+        height:auto;
+    }
+}

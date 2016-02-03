@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Create Your Own YouTube Album Player</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="nav">
+            <img class="icons" id="nav_add" src="./img/add.png"/>
+            
+            <img class="icons" id="nav_dropdown" src="./img/dropdown.png"/>
+        </div>
+        <div id="controls">
+            <h1>CREATE</h1>
+            <h2 id="another">AN ALBUM!</h2>
+            <input type="text" id="title" placeholder="Your Album Title"/ autofocus><br/>
+            <textarea rows="8" id="desc" placeholder="Give your album a description"></textarea><br/>
+            <input type="text" id="img_link" placeholder="Give your album a cover image (url)"/><br/>
+            <button class="create_button" id="create">CREATE A NEW ALBUM!</button>
+        </div>
+
+        <div id="video_display">
+            <iframe id="video"></iframe><br/>
+            <button id="prev">PREV</button>
+            <button id="shuffle">SHUFFLE</button>
+            <button id="next">NEXT</button>
+        </div>
+
+        <div id="album_display">
+            <h2 id="album_display_title">Looks like you don't have any albums yet...</h2>
+        </div>
+        
+    </body>
+    <script src="script.js" type="text/javascript"></script>
+</html>
